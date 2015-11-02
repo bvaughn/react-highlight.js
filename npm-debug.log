@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/brianvaughn/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/Users/brianvaughn/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'start',
+1 verbose cli   '8234' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle react-deferred-component@0.0.1~prestart: react-deferred-component@0.0.1
+6 silly lifecycle react-deferred-component@0.0.1~prestart: no script for prestart, continuing
+7 info lifecycle react-deferred-component@0.0.1~start: react-deferred-component@0.0.1
+8 verbose lifecycle react-deferred-component@0.0.1~start: unsafe-perm in lifecycle true
+9 verbose lifecycle react-deferred-component@0.0.1~start: PATH: /Users/brianvaughn/.nvm/versions/node/v5.0.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/brianvaughn/Documents/git/react-highlight.js/node_modules/.bin:/Users/brianvaughn/.nvm/versions/node/v5.0.0/bin:/Users/brianvaughn/.rbenv/shims:/Users/brianvaughn/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/brianvaughn/.nvm
+10 verbose lifecycle react-deferred-component@0.0.1~start: CWD: /Users/brianvaughn/Documents/git/react-highlight.js
+11 silly lifecycle react-deferred-component@0.0.1~start: Args: [ '-c', 'webpack-dev-server --port $PORT "8234"' ]
+12 silly lifecycle react-deferred-component@0.0.1~start: Returned: code: 1  signal: null
+13 info lifecycle react-deferred-component@0.0.1~start: Failed to exec start script
+14 verbose stack Error: react-deferred-component@0.0.1 start: `webpack-dev-server --port $PORT "8234"`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/brianvaughn/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/brianvaughn/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid react-deferred-component@0.0.1
+16 verbose cwd /Users/brianvaughn/Documents/git/react-highlight.js
+17 error Darwin 14.4.0
+18 error argv "/Users/brianvaughn/.nvm/versions/node/v5.0.0/bin/node" "/Users/brianvaughn/.nvm/versions/node/v5.0.0/bin/npm" "start" "8234"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error react-deferred-component@0.0.1 start: `webpack-dev-server --port $PORT "8234"`
+22 error Exit status 1
+23 error Failed at the react-deferred-component@0.0.1 start script 'webpack-dev-server --port $PORT "8234"'.
+23 error This is most likely a problem with the react-deferred-component package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack-dev-server --port $PORT "8234"
+23 error You can get their info via:
+23 error     npm owner ls react-deferred-component
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

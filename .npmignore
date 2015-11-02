@@ -1,0 +1,8 @@
+demo/
+dist/
+lib/
+tests/
+source/
+.*
+karma.conf.js
+webpack.config.babel.js
