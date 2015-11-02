@@ -2,7 +2,7 @@
 
 Install this component using NPM like so:
 ```bash
-npm install react-deferred-component --save-dev
+npm install react-highlight.js --save
 ```
 
 # License

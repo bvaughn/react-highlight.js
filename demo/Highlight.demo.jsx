@@ -51,28 +51,34 @@ export default class HighlightDemoDemo extends Component {
           To use this component simply <code>npm install react-highlight</code> and optionally choose a custom stylesheet from
           <a href="https://highlightjs.org/">highlight.js</a>.
         </p>
+        <h2>Demo</h2>
         <p>
           Try it yourself by specifying a language and content below:
         </p>
-        <p>
-          <label>Language</label>
-          <input
-            type='text'
-            name='language'
-            defaultValue={language}
-            onChange={event => this._debouncedSetState('language', event.target.value)}/>
-        </p>
-        <p>
-          <label>Content</label>
-          <textarea
-            type='text'
-            name='content'
-            defaultValue={content}
-            onChange={event => this._debouncedSetState('content', event.target.value)}/>
-        </p>
-        <Highlight language={language}>
-          {content}
-        </Highlight>
+        <form>
+          <div className='form-group'>
+            <label>Language</label>
+            <input
+              className='form-control'
+              type='text'
+              name='language'
+              defaultValue={language}
+              onChange={event => this._debouncedSetState('language', event.target.value)}/>
+          </div>
+          <div className='form-group'>
+            <label>Content</label>
+            <textarea
+              className='form-control'
+              type='text'
+              name='content'
+              defaultValue={content}
+              onChange={event => this._debouncedSetState('content', event.target.value)}/>
+          </div>
+          <label>Highlight</label>
+          <Highlight language={language}>
+            {content}
+          </Highlight>
+        </form>
       </div>
     )
   }

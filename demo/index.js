@@ -1,7 +1,6 @@
 import 'purecss'
 import 'highlight.js/styles/github.css'
 import './highlight.css'
-import './main.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
