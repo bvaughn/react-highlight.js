@@ -1,3 +1,7 @@
+# Demo
+
+See the demo [here](http://bvaughn.github.io/react-highlight.js/).
+
 # Installation
 
 Install this component using NPM like so:
@@ -7,5 +11,5 @@ npm install react-highlight.js --save
 
 # License
 
-*react-component-boilerplate* is available under the MIT License.
+*react-highlight.js* is available under the MIT License.
 
