@@ -1,5 +1,5 @@
 import React from 'react'
-import { findDOMNode } from 'react-dom'
+import { findDOMNode, render } from 'react-dom'
 import expect from 'expect.js'
 import Highlight from './Highlight'
 
@@ -7,7 +7,7 @@ describe('Highlight', () => {
   const language = 'javascript'
   const content = 'var foo = "Foo"; // comment'
   const node = document.createElement('div')
-  const highlight = React.render(
+  const highlight = render(
     <Highlight language={language}>
       {content}
     </Highlight>,
