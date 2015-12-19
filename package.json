@@ -93,6 +93,7 @@
     "highlight.js": "^8.9.1"
   },
   "peerDependencies": {
-    "react": "^0.14.0"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.3"
   }
 }
