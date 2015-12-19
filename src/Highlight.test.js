@@ -1,7 +1,7 @@
 import React from 'react'
 import { findDOMNode } from 'react-dom'
 import expect from 'expect.js'
-import Highlight from '../source/Highlight.jsx'
+import Highlight from './Highlight'
 
 describe('Highlight', () => {
   const language = 'javascript'
