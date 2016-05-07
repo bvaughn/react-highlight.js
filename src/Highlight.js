@@ -9,21 +9,23 @@ export default class Highlight extends Component {
   }
 
   componentDidMount () {
-    highlight.initHighlightingOnLoad()
-    highlight.highlightBlock(findDOMNode(this))
+    highlight.highlightBlock(findDOMNode(this.refs.code))
   }
 
   componentDidUpdate () {
     highlight.initHighlighting.called = false
-    highlight.initHighlighting()
+    highlight.highlightBlock(findDOMNode(this.refs.code))
   }
 
   render () {
     const { children, language } = this.props
 
     return (
-      <pre>
-        <code className={language}>
+      <pre {...this.props}>
+        <code
+          className={language}
+          ref='code'
+        >
           {children}
         </code>
       </pre>

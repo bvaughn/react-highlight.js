@@ -55,7 +55,10 @@ export default class HighlightDemoDemo extends Component {
             onChange={event => this._debouncedSetState('content', event.target.value)} />
         </div>
         <label>Output</label>
-        <Highlight language={language}>
+        <Highlight
+          className={styles.pre}
+          language={language}
+        >
           {content}
         </Highlight>
       </div>

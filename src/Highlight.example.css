@@ -2,3 +2,9 @@
   white-space: pre;
   font-family: monospace;
 }
+
+pre,
+.pre {
+  background: #222;
+  border: none;
+}
