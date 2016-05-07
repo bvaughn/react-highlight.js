@@ -8,7 +8,10 @@ describe('Highlight', () => {
   const content = 'var foo = "Foo"; // comment'
   const node = document.createElement('div')
   const highlight = render(
-    <Highlight language={language}>
+    <Highlight
+      className='custom'
+      language={language}
+    >
       {content}
     </Highlight>,
     node
@@ -16,11 +19,16 @@ describe('Highlight', () => {
   const highlightDOMNode = findDOMNode(highlight)
 
   it('should render content with basic markup', () => {
-    expect(highlightDOMNode.className).to.contain('hljs')
-    expect(highlightDOMNode.querySelector('code').className).to.contain('javascript')
+    const code = highlightDOMNode.querySelector('code')
+    expect(code.className).to.contain('hljs')
+    expect(code.className).to.contain('javascript')
     expect(highlightDOMNode.querySelector('.hljs-keyword').textContent).to.contain('var')
-    expect(highlightDOMNode.querySelector('.hljs-variable').textContent).to.contain('foo')
+    expect(highlightDOMNode.textContent).to.contain('foo')
     expect(highlightDOMNode.querySelector('.hljs-string').textContent).to.contain('"Foo"')
     expect(highlightDOMNode.querySelector('.hljs-comment').textContent).to.contain('// comment')
+  })
+
+  it('should support additional props like :className', () => {
+    expect(highlightDOMNode.className).to.contain('custom')
   })
 })
