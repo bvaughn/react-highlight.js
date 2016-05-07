@@ -43,7 +43,7 @@ export default class HighlightDemoDemo extends Component {
             type='text'
             name='language'
             defaultValue={language}
-            onChange={event => this._debouncedSetState('language', event.target.value)}/>
+            onChange={event => this._debouncedSetState('language', event.target.value)} />
         </div>
         <div className='form-group'>
           <label>Enter text to be formatted</label>
@@ -52,7 +52,7 @@ export default class HighlightDemoDemo extends Component {
             type='text'
             name='content'
             defaultValue={content}
-            onChange={event => this._debouncedSetState('content', event.target.value)}/>
+            onChange={event => this._debouncedSetState('content', event.target.value)} />
         </div>
         <label>Output</label>
         <Highlight language={language}>
