@@ -25,7 +25,7 @@ export default class Application extends React.Component {
         </Highlight>
         <p>Choose a highlight.js theme and make sure it's included in your index file.</p>
         <Highlight language='html'>
-          {`<link rel='stylesheet' href='https://highlightjs.org/static/demo/styles/railscasts.css' />`}
+          {'<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/railscasts.css" />'}
         </Highlight>
         <p>And then use react-highlight.js to display your text like so:</p>
         <Highlight language='html'>
