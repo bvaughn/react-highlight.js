@@ -11,6 +11,14 @@ module.exports = {
     libraryTarget: 'commonjs2',
     library: 'redux-search'
   },
+  externals: {
+    react: {
+      commonjs2: 'react'
+    },
+    'react-dom': {
+      commonjs2: 'react-dom'
+    }
+  },
   plugins: [
   ],
   module: {
