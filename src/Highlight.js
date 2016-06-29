@@ -5,7 +5,7 @@ import highlight from 'highlight.js'
 export default class Highlight extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    language: PropTypes.string.isRequired
+    language: PropTypes.string
   }
 
   componentDidMount () {
