@@ -4,7 +4,7 @@
   "main": "dist/main.js",
   "author": "Brian Vaughn",
   "user": "bvaughn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "build": "npm run build:website && npm run build:dist",
     "build:website": "npm run clean:website && NODE_ENV=production webpack --config webpack.config.website.js -p --bail",

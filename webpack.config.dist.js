@@ -12,6 +12,9 @@ module.exports = {
     library: 'redux-search'
   },
   externals: {
+    'highlight.js': {
+      commonjs2: 'highlight.js'
+    },
     react: {
       commonjs2: 'react'
     },
