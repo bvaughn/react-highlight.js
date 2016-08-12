@@ -122,12 +122,17 @@ module.exports =
 	    value: function render() {
 	      var _props = this.props;
 	      var children = _props.children;
+	      var className = _props.className;
 	      var language = _props.language;
+	      var style = _props.style;
 	
 	
 	      return _react2.default.createElement(
 	        'pre',
-	        this.props,
+	        {
+	          className: className,
+	          style: style
+	        },
 	        _react2.default.createElement(
 	          'code',
 	          {
@@ -145,7 +150,9 @@ module.exports =
 	
 	Highlight.propTypes = {
 	  children: _react.PropTypes.node.isRequired,
-	  language: _react.PropTypes.string
+	  className: _react.PropTypes.string,
+	  language: _react.PropTypes.string,
+	  style: _react.PropTypes.object
 	};
 	exports.default = Highlight;
 

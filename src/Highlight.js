@@ -5,7 +5,9 @@ import highlight from 'highlight.js'
 export default class Highlight extends Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
-    language: PropTypes.string
+    className: PropTypes.string,
+    language: PropTypes.string,
+    style: PropTypes.object
   }
 
   componentDidMount () {
@@ -18,10 +20,13 @@ export default class Highlight extends Component {
   }
 
   render () {
-    const { children, language } = this.props
+    const { children, className, language, style } = this.props
 
     return (
-      <pre {...this.props}>
+      <pre
+        className={className}
+        style={style}
+      >
         <code
           className={language}
           ref='code'

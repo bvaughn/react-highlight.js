@@ -11,6 +11,9 @@ describe('Highlight', () => {
     <Highlight
       className='custom'
       language={language}
+      style={{
+        color: 'red'
+      }}
     >
       {content}
     </Highlight>,
@@ -28,7 +31,8 @@ describe('Highlight', () => {
     expect(highlightDOMNode.querySelector('.hljs-comment').textContent).to.contain('// comment')
   })
 
-  it('should support additional props like :className', () => {
+  it('should support additional props :className and :style', () => {
     expect(highlightDOMNode.className).to.contain('custom')
+    expect(highlightDOMNode.style.color).to.equal('red')
   })
 })
