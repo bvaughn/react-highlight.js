@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css?modules&importLoaders=1', 'cssnext'],
+        loaders: ['style', 'css?modules&importLoaders=1', 'postcss'],
         exclude: path.join(__dirname, 'node_modules')
       }
     ]
