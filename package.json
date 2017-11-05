@@ -69,7 +69,7 @@
     "classnames": "^2.2.5",
     "css-loader": "^0.23.1",
     "expect.js": "^0.3.1",
-    "gh-pages": "^0.11.0",
+    "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^2.16.1",
     "karma": "^0.13.22",
     "karma-junit-reporter": "^1.0.0",
