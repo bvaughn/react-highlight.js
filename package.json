@@ -78,7 +78,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.7.0",
-    "mocha": "^2.4.5",
+    "mocha": "^4.0.0",
     "postcss-loader": "^2.0.8",
     "precss": "^2.0.0",
     "react": "^15.0.2",
