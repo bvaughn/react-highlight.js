@@ -81,8 +81,8 @@
     "mocha": "^4.0.0",
     "postcss-loader": "^2.0.8",
     "precss": "^2.0.0",
-    "react": "^15.0.2",
-    "react-dom": "^15.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.4",
@@ -95,10 +95,11 @@
     "worker-loader": "^0.7.0"
   },
   "dependencies": {
-    "highlight.js": "^9.3.0"
+    "highlight.js": "^9.3.0",
+    "prop-types": "^15.6.0"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0"
   }
 }
