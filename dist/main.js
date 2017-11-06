@@ -43,14 +43,14 @@ module.exports =
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(1);
 
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -67,9 +67,9 @@ module.exports =
 	
 	exports.default = _Highlight2.default;
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -103,7 +103,7 @@ module.exports =
 	  function Highlight() {
 	    _classCallCheck(this, Highlight);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Highlight).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Highlight.__proto__ || Object.getPrototypeOf(Highlight)).apply(this, arguments));
 	  }
 	
 	  _createClass(Highlight, [{
@@ -120,11 +120,11 @@ module.exports =
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _props = this.props;
-	      var children = _props.children;
-	      var className = _props.className;
-	      var language = _props.language;
-	      var style = _props.style;
+	      var _props = this.props,
+	          children = _props.children,
+	          className = _props.className,
+	          language = _props.language,
+	          style = _props.style;
 	
 	
 	      return _react2.default.createElement(
@@ -156,24 +156,24 @@ module.exports =
 	};
 	exports.default = Highlight;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = require("react");
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = require("react-dom");
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = require("highlight.js");
 
-/***/ }
+/***/ })
 /******/ ]);
 //# sourceMappingURL=main.js.map
