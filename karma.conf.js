@@ -1,6 +1,6 @@
 module.exports = function (config) {
   config.set({
-    browsers: ['PhantomJS2'],
+    browsers: ['PhantomJS'],
     frameworks: ['mocha'],
     files: ['src/tests.js'],
     preprocessors: {
@@ -17,7 +17,7 @@ module.exports = function (config) {
       require('karma-spec-reporter'),
       require('karma-junit-reporter'),
       require('karma-sourcemap-loader'),
-      require('karma-phantomjs2-launcher')
+      require('karma-phantomjs-launcher')
     ],
     webpack: require('./webpack.config.dev')
   })
