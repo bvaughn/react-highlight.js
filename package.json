@@ -4,7 +4,7 @@
   "main": "dist/main.js",
   "author": "Brian Vaughn",
   "user": "bvaughn",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "scripts": {
     "build": "npm run build:website && npm run build:dist",
     "build:website": "npm run clean:website && NODE_ENV=production webpack --config webpack.config.website.js -p --bail",
@@ -21,6 +21,9 @@
     "test": "NODE_ENV=test karma start",
     "watch": "watch 'clear && npm run lint -s && npm run test -s' src"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/bvaughn/react-highlight.js.git"
