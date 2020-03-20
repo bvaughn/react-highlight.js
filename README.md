@@ -15,7 +15,9 @@ Choose a highlight.js theme and make sure it's included in your index file.
 ```
 
 And then use react-highlight.js to display your text like so:
-```html
+```jsx
+import Highlight from 'react-highlight.js';
+
 <Highlight language={language}>
   {content}
 </Highlight>
