@@ -1,44 +1,33 @@
-import React, { Component } from 'react';
+import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import highlight from 'highlight.js';
 
-export default class Highlight extends Component {
+export default function Highlight(props) {
 
-  constructor(props) {
-    super(props);
-    this.code = React.createRef();
-  }
+  const { text, className, language, style } = props;
 
-  componentDidMount () {
-    highlight.highlightElement(this.code.current);
-  }
+  const code = useRef(null);
 
-  componentDidUpdate () {
-    highlight.initHighlighting.called = false;
-    highlight.highlightElement(this.code.current);
-  }
+  useEffect(() => highlight.highlightElement(code.current), [text])
 
-  render () {
-    const { children, className, language, style } = this.props;
-
-    return (
-      <pre
-        className={className}
-        style={style}
+  return (
+    <pre
+      className={className}
+      style={style}
+    >
+      <code
+        className={language}
+        ref={code}
       >
-        <code
-          className={language}
-          ref={this.code}
-        >
-          {children}
-        </code>
-      </pre>
-    )
-  }
+        {text}
+      </code>
+    </pre>
+  )
+  
 }
 
 Highlight.propTypes = {
-  children: PropTypes.node.isRequired,
+  text: PropTypes.string.isRequired,
   className: PropTypes.string,
   language: PropTypes.string,
   style: PropTypes.object
